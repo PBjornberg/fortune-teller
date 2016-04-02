@@ -17,8 +17,30 @@ public class FortuneTeller {
      *
      */
     public String calculate() {
-        //TODO: Implement
-        return "Not implemented!";
+        
+        Translator translator = new Translator();
+        
+        String adjektivA = translator.getAdjektiv(magicNumbers.calculateA());
+        String verbB = translator.getVerb(magicNumbers.calculateB());
+        String substantivC = translator.getSubstantiv(magicNumbers.calculateC());
+        String verbD = translator.getVerb(magicNumbers.calculateD());
+        String adjektivE = translator.getAdjektiv(magicNumbers.calculateE());        
+        
+        String[] stringArguments = {
+            adjektivA,
+            verbB,
+            substantivC,
+            verbD,
+            adjektivE
+        };
+        
+        return String.format("Din framtid är %s. "
+                + "Du borde sluta %s. "
+                + "Vi ser att du snart kommer att skaffa %s. "
+                + "Snart kommer du vilja %s, "
+                + "men då är det viktigt att du är %s.",
+                stringArguments
+        );
     }
 
     public static void main(String[] args) {
