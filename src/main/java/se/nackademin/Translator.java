@@ -60,30 +60,5 @@ public class Translator {
     
     public String getVerb(int index){
         return verb[index];
-    }
-    
-    /*
-    public enum Strings {
-    STRING_ONE("ONE"),
-    STRING_TWO("TWO")
-    ;
-
-    private final String text;
-
-    /**
-     * @param text
-     
-    private Strings(final String text) {
-        this.text = text;
-    }
-
-    /* (non-Javadoc)
-     * @see java.lang.Enum#toString()
-     
-    @Override
-    public String toString() {
-        return text;
-    }
-}*/
-    
+    }  
 }
