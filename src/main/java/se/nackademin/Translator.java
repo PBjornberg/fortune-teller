@@ -50,15 +50,30 @@ public class Translator {
         "resa"
     };
     
-    public String getAdjektiv(int index){
+    /**
+     * @param index
+     * @return An "Adjektiv" from word-list corresponding to index parameter.
+     * Default modifier will suffice 
+     */
+    String getAdjektiv(int index){
         return adjektiv[index];
     }
-    
-    public String getSubstantiv(int index){
+
+    /**
+     * @param index
+     * @return A "Substantiv" from word-list corresponding to index parameter.
+     * Default modifier will suffice 
+     */    
+    String getSubstantiv(int index){
         return substantiv[index];
     }
     
-    public String getVerb(int index){
+        /**
+     * @param index
+     * @return A "Verb" from word-list corresponding to index parameter.
+     * Default modifier will suffice 
+     */
+    String getVerb(int index){
         return verb[index];
     }  
 }
